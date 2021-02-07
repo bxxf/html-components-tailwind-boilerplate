@@ -2,8 +2,6 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
-const glob = require('glob');
-const PurgeCSSPlugin = require('purgecss-webpack-plugin');
 const PATHS = {
   src: path.join(__dirname),
 };

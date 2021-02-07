@@ -28,7 +28,10 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
+    "postcss-loader": "^5.0.0",
     "sass": "^1.32.6",
-    "sass-loader": "^11.0.0"
+    "sass-loader": "^11.0.0",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^2.0.2"
   }
 }
