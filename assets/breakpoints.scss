@@ -1,8 +1,8 @@
-$tablet: 640px !default;
+$mobile: 640px !default;
 $desktop: 1024px !default;
 
 @mixin mobile {
-  @media screen and (max-width: $tablet - 1px) {
+  @media screen and (max-width: $mobile) {
     @content;
   }
 }
