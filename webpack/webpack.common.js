@@ -1,9 +1,13 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
+const glob = require('glob');
+const PurgeCSSPlugin = require('purgecss-webpack-plugin');
+const PATHS = {
+  src: path.join(__dirname),
+};
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const fs = require('fs');
 
@@ -68,7 +72,7 @@ module.exports = {
               importLoaders: 1,
             },
           },
-
+          'postcss-loader',
           {
             loader: 'sass-loader',
             options: {
