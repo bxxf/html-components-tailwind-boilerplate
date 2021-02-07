@@ -8,14 +8,6 @@ module.exports = {
     path: paths.outputPath,
     chunkFilename: '[name].js',
   },
-  performance: {
-    hints: 'warning',
-    maxAssetSize: 20000000,
-    maxEntrypointSize: 8500000,
-    assetFilter: (assetFilename) => {
-      return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
-    },
-  },
   optimization: {
     splitChunks: {
       chunks: 'all',
