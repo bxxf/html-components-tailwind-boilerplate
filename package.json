@@ -2,6 +2,12 @@
   "name": "luka-webpack",
   "version": "1.0.0",
   "description": "",
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10",
+    ">= 0%"
+  ],
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development PORT=8080 webpack-cli serve --mode development",

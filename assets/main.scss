@@ -1,6 +1,19 @@
 @import 'breakpoints';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .container {
-  @apply mobile:flex text-red-500;
+  display: flex;
+  flex-direction: column;
 }
